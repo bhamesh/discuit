@@ -10,5 +10,11 @@
 	],
 	"css/selectize.css": [
 		"public/css/selectize.css"
-	]
+	],
+	"js/summernote.js":[
+		"public/js/summernote.js"
+	],
+	"css/summernote.css":[
+		"public/css/summernote.css"
+	],
 }

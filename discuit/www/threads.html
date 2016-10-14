@@ -213,13 +213,7 @@
         }
       });
     }
-
-    // $('.page_content').on('click', '#open-new-thread', function() {
-    //    get_categories_and_init_selectize('#new-thread-categories');
-    // });
-    // categories_from_url = mnt.get_url_param('categories');
-    // get_categories_and_init_selectize('#filters-selectize', false, categories_from_url);
-
+    // param_list = mnt.get_url_param('categor').concat(mnt.get_url_param('severity')).concat(mnt.get_url_param('status'))
 
     function toggle_buttons_edit_thread(threadname, editmode) {
       
@@ -238,6 +232,10 @@
         btn_cancel_edit_thread.addClass('hide');
       }
     }
+
+    $('.page_content').on('click', '#open-new-thread', function() {
+       get_categories_and_init_selectize('#new-thread-categories');
+    })
       
     $('#create-thread').click(function(event){
         var title = $('#new-thread-title');
